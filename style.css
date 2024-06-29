@@ -1,0 +1,254 @@
+:root{
+    --colorWhite:white;
+    --colorBlack:black;
+    --boxShadow: 0px 0px 7px #756f6fea;
+    --border-radius: 3px;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inconsolata", sans-serif;
+   
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight:400;
+    margin:10px 0
+}
+h5 {
+    font-size: 18px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 18px ;
+    margin: 18px 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3333;
+}
+nav{
+    
+    background-color:var(--colorBlack) ;
+    padding:   8px 16px;
+
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* gap: 40px; */
+    text-align: center;
+}
+
+nav ul .nav-link{
+    color: #fff ;
+    text-transform: uppercase;
+    padding:   8px 16px;
+    display: block;
+    font-size: 13px;
+    transition: .5s ;
+}
+
+
+nav ul .nav-link:hover{
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+}
+/* Start home-section */
+.home-section{
+   background-image: url(images/coffeehouse.jpg); 
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   position: relative;
+}
+.home-section .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(-50% , -50%); */
+height: 100vh;
+text-align: center;
+}
+.home-section .head h1{
+    color: var(--colorWhite);
+    font-size: 90px;
+    font-weight: 400;
+}
+.text-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px 24px ;
+    color: var(--colorWhite);
+
+}
+.text-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 24px ;
+    color: var(--colorWhite);
+ 
+}
+.text-left span{
+    background-color:var(--colorBlack);
+
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+/* End home-section */
+
+/* Start about-section */
+.about-section{
+    max-width: 700px;
+    margin: auto;
+}
+.head-section{
+text-align: center;
+padding: 64px 0;
+}
+.head-section span{
+    background-color:var(--colorBlack);
+    color: var(--colorWhite);
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+   text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+.about-section p{
+    line-height: 1.6;
+   
+
+}
+.text-last{
+    background-color: #f1f1f1 !important;
+    margin: 16px 0;
+    padding:0 16px;
+    border-left: 6px solid #ccc !important;
+
+}
+.text-last p {
+    margin: 16px 0;
+    display: inline-block;
+}
+ img{
+    margin-top: 16px;
+   max-width: 100%;
+
+}
+
+
+/* End about-section */
+
+
+
+/* Start menu-section */
+.menu-section{
+    max-width: 700px;
+    margin: auto;
+}
+
+.inside-menu{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 8px 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    
+}
+.left-menu ,
+.right-menu{
+ width: 50%;   
+}
+.left-menu{
+    background-color: #535151;
+    padding: 4px;
+    color: #fff;
+}
+.item-menu{
+    padding: 48px 16px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+    }
+.item-menu p{
+    color: #757575;
+
+  
+}
+.menu-section img{
+    margin-top: 32px;
+}
+/* End menu-section*/
+/* Start where-section */
+.where-section{
+    max-width: 700px;
+    margin: auto;
+}
+
+.where-section p span{
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+
+
+}
+.where-section form input{
+    display: block;
+    width: 100%;
+    margin: 18px 0;
+    padding:16px 8px;
+    border: 1px solid #ccc !important;
+    font-size: 17px;
+}
+.where-section form  button{
+    color: var(--colorWhite);
+    background-color: var(--colorBlack);
+    padding: 9px 16px;
+    cursor: pointer;
+    border: none;
+    display:inline-block;
+    margin: 18px 0;
+    transform: .5s ;
+    /* font-size: 18px; */
+}
+.where-section form  button:hover{
+    color: var(--colorBlack);
+    background-color: #ccc ;
+}
+/* End where-section */
+/* Start Footer */
+
+footer{
+    padding: 48px 0;
+    background-color: #f1f1f1 ;
+    text-align: center;
+}
+
+/* End Footer */
